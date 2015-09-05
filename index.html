@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<title>Amelia Oon</title>
+		<script type="text/javascript" src="aboutsearch.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+	</head>
+	<body>
+		<div id="homebg"></div>
+		<div id="resumebg"></div>
+		<div id="contactbg"></div>
+
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+		<div id="four"></div>
+		<div id="five"></div>
+
+		<div id="navspot">
+			<div class="nav">
+				<i class="fa fa-chevron-circle-right"></i>
+			</div>
+				<a href="#one" class="nav">home</a>
+				<a href="#two" class="nav">portfolio</a>
+				<a href="#three" class="nav">resume</a>
+				<a href="#four" class="nav">about</a>
+				<a href="#five" class="nav">contact</a>
+
+		</div>
+
+		<div id="home">
+			<div id="title">
+				Amelia Oon
+			</div>
+				artist & designer
+		</div>
+		<div id="portfolio">
+			<h1>
+				Portfolio
+			</h1>
+			<h2>
+				Graphic and Web Design
+			</h2>
+			<p>
+				<a href="nuwit.html">
+					<img src="nuwit.svg" class="pitem">
+				</a>
+				<a href="quiver.html">
+					<img src="quiversquare.svg" class="pitem">
+				</a>
+				<a href="halftone.html">
+					<img src="halftone2.svg" class="pitem">
+				</a>
+				<a href="gamenight.html">
+					<img src="gnsquare.png" class="pitem">
+				</a>
+			</p>
+			<h2>
+				Digital art
+			</h2>
+			<p>
+				<a href="c1.html">
+					<img src="c1square.png" class="pitem">
+				</a>
+				<a href="liv.html">
+					<img src="livsquare.png" class="pitem">
+				</a>
+				<a href="c2.html">
+					<img src="c2square.png" class="pitem">
+				</a>
+				<a href="uwg.html">
+					<img src="uwgsquare.png" class="pitem">
+				</a>
+			</p>
+
+		</div>
+		<div id="resume">
+			<h1>
+				resume
+			</h1>
+			(<a href="resume.pdf">click for pdf</a>)
+			<h2>
+				abridged version:
+			</h2>
+			<p id="r">
+				<b>Education:</b>
+				<br>
+				<i>Abington Heights High School</i>, Class of 2013
+				<br>
+				<i>Northeastern University</i>, Candidate for BFA in Digital Art and Interactive Media
+			</p>
+			<p>
+				<b>Work Experience:</b>
+				<br>
+				<i>NEU Pharmaceutical Science Department</i>, Web Design Work Study (2013-present)
+				<br>
+				<i>New Art Love</i>, Technology Intern (Spring 2014)
+
+			</p>
+			<p>
+				<b>Relevant Skills:</b>
+				<br>
+				HTML/CSS, Photoshop, Illustrator, InDesign, AfterEffects, Premiere Pro
+			</p>
+		</div>
+		<div id="about">
+			<h1>
+				About me
+			</h1>
+			<br>
+			<p>
+				Hi, my name is Amelia and I'm a digital art and interactive media student at Northeastern University.
+				I'm currently exploring web and graphic design, as well as video and vfx.
+				In my free time, I enjoy drawing, reading comic books, and working on various side projects like 
+				<a href="http://thequivermag">The Quiver</a>.
+			</p>
+			<h2>
+				Still curious?
+			</h2>
+			<p>
+				Find out about my favorite &nbsp;
+				<input type="text" name="favorite" id="textbox" onKeydown="Javascript: if (event.keyCode==13) favorite();"> &nbsp;
+				<a href="#four" onclick="favorite()">go</a>
+				<p id="answer"></p>
+			</p>
+
+		</div>
+		<div id="contact">
+			<h1>
+				contact & social media
+			</h1>
+			<p>
+				<a href="mailto:ameliaoon@gmail.com" class="talk" title="ameliaoon@gmail.com">
+					<i class="fa fa-envelope-o"></i>
+				</a>
+				<a href="https://twitter.com/Amelia_Oon" class="talk" title="@amelia_oon">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<a href="https://github.com/oohnah" class="talk" title="oohnah">
+					<i class="fa fa-github"></i>
+				</a>
+				<a href="http://ameliartist.tumblr.com/" class="talk" title="ameliartist">
+					<i class="fa fa-tumblr"></i>
+				</a>
+
+
+
+			</p>
+		</div>
+	</body>
+</html>
